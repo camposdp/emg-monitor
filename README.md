@@ -9,3 +9,15 @@ Update:
 
 -The first version has an issue with the reconnection which was making the data transfer slow. This issue was corrected.
 -New Python code was added to dynamicly plot a bar instead of the amplitude over time.
+
+Last version: 
+-PC_getEMG_setFlag.py
+-ESP32_sendEMG_getFlag
+
+Some bugs were fixed. Python send the threhold (comparing the EMG signal) and information when button state is changed. 
+ESP32 connect directly now and blink led if threhold flag arrives. 
+
+Future devs> 
+- Include FES code (pulse modulation) 
+- Maybe include some processing fom python into the ESP32
+- Paralell processing and/or acquisition in the interruption. 
